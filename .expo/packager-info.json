@@ -1,0 +1,9 @@
+{
+  "devToolsPort": 19003,
+  "expoServerPort": 19001,
+  "packagerPort": 19001,
+  "expoServerNgrokUrl": "https://tn-f8c.anonymous.inicial.exp.direct",
+  "packagerNgrokUrl": "https://packager.tn-f8c.anonymous.inicial.exp.direct",
+  "ngrokPid": 20498,
+  "webpackServerPort": 19007
+}
