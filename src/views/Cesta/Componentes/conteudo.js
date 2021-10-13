@@ -1,9 +1,8 @@
 import React from 'react';
-import {Image, StyleSheet, View} from 'react-native';
-
+import {Image, StyleSheet, View, TouchableOpacity} from 'react-native';
 import Texto from '../../../componentes/texto';
 
-export default function ItemDetail({nome,logoFazenda,nomeFazenda,descricao,preco}){
+export default function ItemDetail({nome,logoFazenda,nomeFazenda,descricao,preco,botao}){
 
     return <><Texto style={style.nome}>{nome}</Texto>
     <View style={style.fazenda}>
@@ -12,7 +11,8 @@ export default function ItemDetail({nome,logoFazenda,nomeFazenda,descricao,preco
     </View>
     
     <Texto style={style.descricao}>{descricao}</Texto>
-    <Texto style={style.preco}>{preco}</Texto></>
+    <Texto style={style.preco}>{preco}</Texto>
+    <TouchableOpacity style={style.botao} onPress={function(){ alert("Teste!")}}><Texto style={style.textoBotao}>{botao}</Texto></TouchableOpacity></>
 
 }
 
@@ -49,7 +49,20 @@ const style = StyleSheet.create({
         fontWeight:"bold",
         fontSize:26,
         lineHeight:42,
-        margimTop:8
+        marginTop:8
     },
+    botao:{
+        marginTop:16,
+        backgroundColor:"#2A9F85",
+        paddingVertical:16,
+        borderRadius:6,
+    },
+    textoBotao:{
+        textAlign:"center",
+        color:"#fff",
+        fontSize:20,
+        lineHeight:26,
+        fontWeight:"bold"
+    }
 
 })
