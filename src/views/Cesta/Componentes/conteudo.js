@@ -2,6 +2,7 @@ import React from 'react';
 import {Image, StyleSheet, View, TouchableOpacity} from 'react-native';
 import Texto from '../../../componentes/texto';
 
+
 export default function ItemDetail({nome,logoFazenda,nomeFazenda,descricao,preco,botao}){
 
     return <><Texto style={style.nome}>{nome}</Texto>
@@ -13,6 +14,7 @@ export default function ItemDetail({nome,logoFazenda,nomeFazenda,descricao,preco
     <Texto style={style.descricao}>{descricao}</Texto>
     <Texto style={style.preco}>{preco}</Texto>
     <TouchableOpacity style={style.botao} onPress={function(){ alert("Teste!")}}><Texto style={style.textoBotao}>{botao}</Texto></TouchableOpacity></>
+    
 
 }
 
